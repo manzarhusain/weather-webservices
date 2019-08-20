@@ -9,9 +9,9 @@
 	<description>Set up fopr US Bank webservices	</description>
 
 	<properties>
+	
 		<gherkin.version>4.7.1</gherkin.version>
 		<spring.version>5.1.9.RELEASE</spring.version>
-
 
 	</properties>
 
@@ -78,7 +78,45 @@
 			<version>${spring.version}</version>
 		</dependency>
 
+        <!-- Cassandra database dependency -->
+		<dependency>
+	     <groupId>com.datastax.cassandra</groupId>
+	     <artifactId>cassandra-driver-core</artifactId>
+	     <version>3.1.0</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.cassandraunit</groupId>
+		    <artifactId>cassandra-unit</artifactId>
+		    <version>3.0.0.1</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>com.datastax.cassandra</groupId>
+		  <artifactId>cassandra-driver-mapping</artifactId>
+		  <version>2.1.2</version>
+		</dependency>
+		
+			<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-library -->
+		<dependency>
+		    <groupId>org.hamcrest</groupId>
+		    <artifactId>hamcrest-library</artifactId>
+		    <version>2.1</version>
+		    <scope>test</scope>
+		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+		<dependency>
+		    <groupId>javax.xml.bind</groupId>
+		    <artifactId>jaxb-api</artifactId>
+		    <version>2.3.1</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.6.3</version>
+		</dependency>
 
 
 	</dependencies>

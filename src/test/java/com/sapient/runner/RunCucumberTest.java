@@ -6,9 +6,6 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 
-
-
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin = { "pretty", "html:target/cucumber-htmlreport",
@@ -17,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 		features = { "src/test/resources/features" },
 		glue={"com.sapient.steps"},
 		dryRun = false,
-		tags="@WeatherService",
+		tags="@WeatherService_1,@WeatherService_2,@WeatherService_3",
 		strict=true,
 		monochrome=true
 		)

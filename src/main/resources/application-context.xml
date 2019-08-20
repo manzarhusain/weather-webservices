@@ -17,7 +17,10 @@
    <bean id="EnvironmentProperties" class="com.sapient.libs.EnvironmentProperties">
 		
 		<property name="weatherRestUrl" value="${weatherRestUrl.value}" />	
-		<property name="weatherServiceAppKey" value="${weatherServiceAppKey.value}" />			
+		<property name="weatherServiceAppKey" value="${weatherServiceAppKey.value}" />
+		<property name="weatherRestUrlHyderabad" value="${weatherRestUrlHyderabad.value}" />
+		<property name="weatherOpenServiceUrl" value="${weatherOpenServiceUrl.value}" />
+				
          
    </bean>
    
